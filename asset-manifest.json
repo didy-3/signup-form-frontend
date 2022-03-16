@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/signup-form-frontend/static/css/main.f5d3ffdf.css",
+    "main.js": "/signup-form-frontend/static/js/main.28eccc53.js",
+    "static/js/787.26dbf1f6.chunk.js": "/signup-form-frontend/static/js/787.26dbf1f6.chunk.js",
+    "static/media/movies.png": "/signup-form-frontend/static/media/movies.99023a13e3af2241fd99.png",
+    "static/media/music.png": "/signup-form-frontend/static/media/music.33afa4d4d77c17c1a6fd.png",
+    "static/media/gaming.png": "/signup-form-frontend/static/media/gaming.2aa7043150775728dc4b.png",
+    "static/media/camping-tent.png": "/signup-form-frontend/static/media/camping-tent.bda6d791b3d854547618.png",
+    "static/media/gym.png": "/signup-form-frontend/static/media/gym.bb522952a78cf4583b7e.png",
+    "static/media/camera.png": "/signup-form-frontend/static/media/camera.742317136e0c23a1b4dc.png",
+    "index.html": "/signup-form-frontend/index.html",
+    "main.f5d3ffdf.css.map": "/signup-form-frontend/static/css/main.f5d3ffdf.css.map",
+    "main.28eccc53.js.map": "/signup-form-frontend/static/js/main.28eccc53.js.map",
+    "787.26dbf1f6.chunk.js.map": "/signup-form-frontend/static/js/787.26dbf1f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5d3ffdf.css",
+    "static/js/main.28eccc53.js"
+  ]
+}
