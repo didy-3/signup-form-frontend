@@ -1,4 +1,4 @@
-#About this repo 
+# About this repo 
 You can look at the form here https://didy-3.github.io/signup-form-frontend/
 
 This is a basic multi-step signup form, its only frontend, API is needed for it to be workable
