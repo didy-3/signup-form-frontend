@@ -1,0 +1,11 @@
+.drop-zone{
+  opacity: 0.5;
+  display: grid;
+  height: 5em;
+  border: 1px solid purple;
+  background-color: rgba(191, 162, 219, 0.1);
+  text-align: center;
+  place-self: center;
+  place-items: center;
+  cursor: pointer;
+}

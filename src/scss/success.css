@@ -1,0 +1,11 @@
+.success-list {
+  display: grid;
+  row-gap: 1em;
+}
+.success-list .success-list-item {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*# sourceMappingURL=success.css.map */

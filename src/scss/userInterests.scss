@@ -1,0 +1,32 @@
+.interest-container{
+
+}
+//interest-label
+.css-ahj2mt-MuiTypography-root{
+  flex-grow: 2;
+}
+.interest-checkbox-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(255,255,255, 0.4);
+  .interest-label {
+    display: flex;
+    place-items: center ;
+    width: 100% ;
+    margin: 0;
+    .interest-icon {
+      margin-left: 5px;
+    }
+    .interest-name {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+.interest-checkbox-container:checked{
+
+  background-color: rgba(255,255,255, 0.6);
+}
+.interest-checkbox-container:hover{
+  background-color: rgba(255,255,255, 0.6);
+}

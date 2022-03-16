@@ -1,32 +1,30 @@
+
 .App {
   text-align: center;
 }
 
 /*basic reset*/
-* {
-  margin: 0;
-  padding: 0;
-}
+* {margin: 0; padding: 0;}
 
 html {
   height: 100%;
+
   /*background = gradient + image pattern combo*/
-  background: linear-gradient(rgba(147, 18, 74, 0.4), rgba(129, 38, 191, 0.5));
+  background:
+          linear-gradient(rgba(147, 18, 74, 0.4), rgba(129, 38, 191, 0.5));
 }
 
 body {
   font-family: montserrat, arial, verdana, serif;
 }
 
-form {
+form{
   display: grid;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom:  2em;
   min-height: 300px;
-  width: 100%;
+ width: 100%;
+  button{
+   max-height: 3em;
+  }
 }
-form button {
-  max-height: 3em;
-}
-
-/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,32 @@
+.css-ahj2mt-MuiTypography-root {
+  flex-grow: 2;
+}
+
+.interest-checkbox-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.interest-checkbox-container .interest-label {
+  display: flex;
+  place-items: center;
+  width: 100%;
+  margin: 0;
+}
+.interest-checkbox-container .interest-label .interest-icon {
+  margin-left: 5px;
+}
+.interest-checkbox-container .interest-label .interest-name {
+  width: 100%;
+  text-align: center;
+}
+
+.interest-checkbox-container:checked {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.interest-checkbox-container:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*# sourceMappingURL=userInterests.css.map */
