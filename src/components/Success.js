@@ -18,8 +18,7 @@ const Success = ({nextStep, handleChange, values, prevStep}) => {
         e.preventDefault();
         prevStep();
     }
-    return <Container component="main" maxWidth="xs"
-                      style={{marginTop: "2em", marginBottom: "2em"}}>
+    return <div className={'success-form'}>
 
         <List className={"success-list"}>
             <ListItem className={"success-list-item"}>
@@ -32,10 +31,10 @@ const Success = ({nextStep, handleChange, values, prevStep}) => {
                 <ListItemText primary={firstName} secondary="First Name" className={"success-list-text"}/>
             </ListItem>
             <ListItem className={"success-list-item"}>
-                <ListItemText primary={lastName}  secondary="Last Name" className={"success-list-text"}/>
+                <ListItemText primary={lastName} secondary="Last Name" className={"success-list-text"}/>
             </ListItem>
             <ListItem className={"success-list-item"}>
-                <ListItemText primary={birthday} secondary="Birthday"  className={"success-list-text"}/>
+                <ListItemText primary={birthday} secondary="Birthday" className={"success-list-text"}/>
             </ListItem>
 
             <Grid container spacing={2} style={{margin: 0}}>
@@ -54,7 +53,7 @@ const Success = ({nextStep, handleChange, values, prevStep}) => {
 
 
         </List>
-        <Grid item xs={12}>
+        <div className={'nav-buttons'}>
             <Button
                 onClick={showPrev}
                 type="submit"
@@ -68,8 +67,8 @@ const Success = ({nextStep, handleChange, values, prevStep}) => {
             >
                 Back
             </Button>
-        </Grid>
+        </div>
 
-    </Container>
+    </div>
 }
 export default Success

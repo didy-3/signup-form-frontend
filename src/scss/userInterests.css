@@ -1,31 +1,42 @@
-.css-ahj2mt-MuiTypography-root {
-  flex-grow: 2;
+.wrapper {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
 }
-
-.interest-checkbox-container {
+.wrapper .interest-item {
+  display: grid;
+  max-width: 100%;
+  grid-auto-flow: column;
+  margin: 0;
+  place-items: stretch;
+}
+.wrapper .interest-checkbox-container {
   border: 1px solid black;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.4);
+  display: grid;
+  grid-auto-flow: column;
 }
-.interest-checkbox-container .interest-label {
-  display: flex;
+.wrapper .interest-checkbox-container .interest-label {
+  display: grid;
   place-items: center;
   width: 100%;
   margin: 0;
+  grid-auto-flow: column;
 }
-.interest-checkbox-container .interest-label .interest-icon {
+.wrapper .interest-checkbox-container .interest-label .interest-icon {
   margin-left: 5px;
 }
-.interest-checkbox-container .interest-label .interest-name {
+.wrapper .interest-checkbox-container .interest-label .interest-name {
   width: 100%;
   text-align: center;
+  place-self: center;
 }
-
-.interest-checkbox-container:checked {
+.wrapper .interest-checkbox-container:checked {
   background-color: rgba(255, 255, 255, 0.6);
 }
-
-.interest-checkbox-container:hover {
+.wrapper .interest-checkbox-container:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
 

@@ -13,6 +13,7 @@ import StepLabel from "@mui/material/StepLabel";
 import Grid from "@mui/material/Grid";
 import {getInterests} from "../services/apiCallerMock";
 import Validation from "./Validation";
+import '../scss/stepper.scss'
 
 export default class SignUp extends Component {
     state = {
@@ -119,7 +120,7 @@ export default class SignUp extends Component {
                 <Container component="main" maxWidth="xs">
                     <Grid
                         sx={{
-                            marginTop: 10,
+                            marginTop: '15%',
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
@@ -129,24 +130,26 @@ export default class SignUp extends Component {
                         <Typography component="h1" variant="h5">
                             Sign Up
                         </Typography>
-                        {selectRender(this.state.step)}
+                        <div className={'from-step-wrapper'}>
+                            {selectRender(this.state.step)}
+                        </div>
                     </Grid>
                 </Container>
-                <Container component="main" maxWidth="xs">
-                    <Grid sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center'
-                    }}>
-                        <Stepper activeStep={this.state.step - 1} alternativeLabel>
+                <div className={'stepper-wrapper'}>
+                        <Stepper activeStep={this.state.step - 1} alternativeLabel
+                        sx={{
+                            width: '90%',
+                            padding: '0 20px'
+                        }}>
                             {steps.map((label) => (
-                                <Step key={label}>
+                                <Step key={label} style={{
+                                    padding: 0
+                                }}>
                                     <StepLabel>{label}</StepLabel>
                                 </Step>
                             ))}
                         </Stepper>
-                    </Grid>
-                </Container>
+                </div>
             </ThemeProvider>
         </div>
     }

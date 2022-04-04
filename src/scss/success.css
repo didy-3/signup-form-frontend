@@ -1,8 +1,15 @@
-.success-list {
+.success-form {
   display: grid;
-  row-gap: 1em;
+  width: 100%;
+  place-items: stretch;
+  padding: 1em 0;
+  min-height: 50vh;
 }
-.success-list .success-list-item {
+.success-form .success-list {
+  display: grid;
+  row-gap: 10px;
+}
+.success-form .success-list .success-list-item {
   border: 1px solid black;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.4);

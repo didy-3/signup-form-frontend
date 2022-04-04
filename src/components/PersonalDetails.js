@@ -41,10 +41,8 @@ const PersonalDetails = ({nextStep, handleChange, values, prevStep}) => {
         </div>
     );
 
-    return <form
-        style={{marginTop: "2em", marginBottom: "2em"}}>
+    return <form>
         <Grid container spacing={2}>
-
             <Grid item xs={12}>
                 <TextField
                     required
@@ -107,39 +105,35 @@ const PersonalDetails = ({nextStep, handleChange, values, prevStep}) => {
             </Grid>
         </Grid>
 
-        <Grid container spacing={2} sx={{alignContent:"end"}}>
-            <Grid item xs={6}>
-                <Button
-                    onClick={showPrev}
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    color="primary"
-                    sx={{
-                        marginTop: "1em",
-                        borderRadius: "5px",
-                    }}
-                >
-                    Back
-                </Button>
-            </Grid>
+        <div className={'nav-buttons'}>
+            <Button
+                onClick={showPrev}
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                sx={{
+                    marginTop: "1em",
+                    borderRadius: "5px",
+                }}
+            >
+                Back
+            </Button>
 
-            <Grid item xs={6}>
-                <Button
-                    onClick={showNext}
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    color="primary"
-                    sx={{
-                        marginTop: "1em",
-                        borderRadius: "5px",
-                    }}
-                >
-                    Next
-                </Button>
-            </Grid>
-        </Grid>
+            <Button
+                onClick={showNext}
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                sx={{
+                    marginTop: "1em",
+                    borderRadius: "5px",
+                }}
+            >
+                Next
+            </Button>
+        </div>
     </form>
 }
 export default PersonalDetails

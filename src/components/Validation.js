@@ -31,7 +31,7 @@ const Validation = ({prevStep, nextStep, handleChange, values}) => {
 
     const selectRender = () => {
         if (values.valid) {
-           return <Typography component="h1" variant="h5">Code is valid!</Typography>
+            return <Typography component="h1" variant="h5">Code is valid!</Typography>
         } else if (code === '') {
             return <>
                 <Button
@@ -80,54 +80,55 @@ const Validation = ({prevStep, nextStep, handleChange, values}) => {
                     sx={{
                         marginTop: "1em",
                         borderRadius: "5px",
-                        bgcolor: "white"
+                        bgcolor: "white",
+
+                        height: "40%"
                     }}
                     error={userCode}
-                    helperText={userCode ? "Code is Not Valid" : ""}
+                    helperText={userCode && "Code is Not Valid" }
+                    FormHelperTextProps={{
+                    sx:{
+                        height: '70px'
+                    }
+                    }}
                 />
             </>
         }
     }
     return <form>
-        <Grid container spacing={2}>
-            <Grid item xs={12}>
+
         {selectRender()}
-            </Grid>
-        </Grid>
-        <Grid container spacing={2} sx={{alignContent:"end"}}>
-            <Grid item xs={6}>
-                <Button
-                    onClick={showPrev}
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    color="primary"
-                    sx={{
-                        marginTop: "1em",
-                        borderRadius: "5px",
-                    }}
-                >
-                    Back
-                </Button>
-            </Grid>
 
-            <Grid item xs={6}>
-                <Button
-                    onClick={showNext}
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    color="primary"
-                    sx={{
-                        marginTop: "1em",
-                        borderRadius: "5px",
-                    }}
-                >
-                    Next
-                </Button>
-            </Grid>
-        </Grid>
+        <div className={'nav-buttons'}>
+            <Button
+                onClick={showPrev}
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                sx={{
+                    marginTop: "1em",
+                    borderRadius: "5px",
+                }}
+            >
+                Back
+            </Button>
 
+            <Button
+                onClick={showNext}
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                sx={{
+                    marginTop: "1em",
+                    borderRadius: "5px",
+                }}
+            >
+                Next
+            </Button>
+
+        </div>
     </form>
 }
 
